@@ -1,0 +1,1434 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  user-select: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slideThree {
+    display: none;
+  }
+
+.slideTwo {
+    display: none;
+  }
+
+button {
+    outline: none;
+  }
+
+  .page-paddings {
+    padding: 0 8%;
+  }
+
+  .footer-content-mobile {
+    display: none;
+  }
+  
+  .burger-menu-wrapper {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .main-container .scroll-page {
+    width: 100%;
+    height: 130px;
+    display: block;
+  }
+  .main-container header {
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .main-container header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 18px;
+  }
+  .main-container header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 24px;
+    color: #222;
+    cursor: pointer;
+  }
+  .main-container header img {
+    width: 60px;
+  }
+  .main-container header .header-right {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-container header .header-right .headerImage {
+    width: 45px;
+    height: 45px;
+    background-color: #F3FBF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .main-container header .header-right .headerImage img {
+    width: 60%;
+  }
+  .main-container header .header-right button {
+    width: 170px;
+    height: 45px;
+    font-size: 0.9em;
+    font-weight: 400;
+    border: none;
+    color: #fff;
+    background-color: #09A66D;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .main-container header .burger-menu {
+    width: 50px;
+    height: 50px;
+    background-color: #F3FBF8;
+    border-radius: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .main-container header .burger-menu div {
+    width: 60%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #09A66D;
+  }
+  .main-container .section-homepage {
+    width: 100%;
+    background-image: url(./assets/leaves.webp);
+    background-size: cover;
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 8% 50px 8%;
+  }
+  .main-container .section-homepage h2 {
+    font-size: 3.6em;
+    font-family: "Rosario", sans-serif;
+    font-weight: 700;
+    color: #222;
+    margin-top: 20px;
+  }
+  .main-container .section-homepage > p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 25px;
+    width: 705px;
+  }
+  .main-container .section-homepage .ordernow-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .main-container .section-homepage .ordernow-btn p {
+    font-weight: 500;
+    color: #222;
+    margin-right: 20px;
+  }
+  .main-container .section-homepage .ordernow-btn button {
+    width: 50px;
+    height: 50px;
+    background-color: #09A66D;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .main-container .section-homepage .ordernow-btn button img {
+    width: 50%;
+  }
+  .main-container .section-homepage .banner-block {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+  }
+  .main-container .section-homepage .banner-block .banner-block-left {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .section-homepage .banner-block .banner-block-left img {
+    width: 75%;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right > :not(article:first-child) {
+    margin-top: 20px;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article {
+    width: 280px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3% 7%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-image .image-background {
+    width: 60px;
+    height: 60px;
+    background-color: #F3FBF8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-image .image-background img {
+    width: 50%;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-text h3 {
+    font-size: 2em;
+    color: #000;
+    font-weight: 400;
+  }
+  .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-text p {
+    color: #000;
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  .main-container .section-delivery {
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+  }
+  .main-container .section-delivery .ourbenefitspage-left {
+    width: 50%;
+  }
+  .main-container .section-delivery .ourbenefitspage-left h2 {
+    font-size: 3em;
+    font-family: "Rosario", sans-serif;
+    color: #222;
+  }
+  .main-container .section-delivery .ourbenefitspage-left p {
+    color: #555;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 626px;
+    margin-top: 20px;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article {
+    width: 550px;
+    height: 165px;
+    padding: 10% 5%;
+    display: flex;
+    margin-top: 20px;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-image {
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-image .image-background {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-image .image-background img {
+    width: 100%;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text h3 {
+    font-size: 1.20em;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text p {
+    width: 350px;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article:nth-child(4) {
+    background-color: #F3FBF8;
+  }
+  .main-container .section-delivery .ourbenefitspage-left article:nth-child(4) .benefitscards-image .image-background {
+    background-color: #fff;
+  }
+  .main-container .section-delivery .ourbenefitspage-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+  }
+  .main-container .section-delivery .ourbenefitspage-right img {
+    width: 100%;
+  }
+  .main-container .section-explorenutrients {
+    width: 100%;
+    padding: 70px 8% 70px 8%;
+    background-image: url(../img/ExplorePageBackground.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-left img {
+    width: 85%;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-left {
+    width: 50%;
+    padding: 20px 0;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right h2 {
+    font-size: 3em;
+    font-family: "Rosario", sans-serif;
+    color: #222;
+    width: 566px;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right > p {
+    font-size: 0.9em;
+    color: #555;
+    width: 566px;
+    margin-top: 50px;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn p {
+    font-weight: 500;
+    color: #222;
+    margin-right: 20px;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn button {
+    width: 50px;
+    height: 50px;
+    background-color: #09A66D;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn button img {
+    width: 50%;
+  }
+  .main-container .section-reviewspage {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+  }
+  .main-container .section-reviewspage .reviewspage-left {
+    width: 50%;
+  }
+  .main-container .section-reviewspage .reviewspage-left h2 {
+    font-size: 3em;
+    font-family: "Rosario", sans-serif;
+    color: #222;
+    width: 640px;
+  }
+  .main-container .section-reviewspage .reviewspage-left p {
+    font-size: 0.9em;
+    line-height: 150%;
+    width: 595px;
+    min-height: 162px;
+    color: #555;
+    margin-top: 50px;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom {
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block h4 {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #222;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block img {
+    width: 140px;
+    margin-top: 20px;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons {
+    display: flex;
+    align-items: flex-end;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: #09A66D;
+    cursor: pointer;
+  }
+  .main-container .section-reviewspage .reviewspage-left .revievsPage__left-bottom .slider-buttons button img {
+    width: 20%;
+  }
+  .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons button:first-Child {
+    background-color: white;
+    border: 2px solid #CCCCCC;
+  }
+  .main-container .section-reviewspage .reviewspage-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main-container .section-reviewspage .reviewspage-right img {
+    width: 80%;
+  }
+  .main-container .section-download-app  {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-container .section-download-app .apppage-left img {
+    width: 75%;
+    margin-left: 55px;
+  }
+  .main-container .section-download-app .apppage-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .section-download-app .apppage-right button {
+    width: 180px;
+    height: 45px;
+    background-color: #F3FBF8;
+    color: #333;
+    font-size: 0.9em;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  .main-container .section-download-app .apppage-right h2 {
+    font-size: 3em;
+    color: #222;
+    font-family: "Rosario", sans-serif;
+    width: 534px;
+    margin-top: 30px;
+  }
+  .main-container .section-download-app .apppage-right p {
+    margin-top: 40px;
+    color: #555;
+    width: 629px;
+  }
+  .main-container .section-download-app .apppage-right .app-buttons {
+    display: flex;
+    margin-top: 50px;
+  }
+  .main-container .section-download-app .apppage-right .apppage-right img {
+    width: 134px;
+    margin-right: 20px;
+  }
+  .main-container .section-download-app .apppage-left img {
+    width: 370px;
+    margin-right: 20px;
+  }
+  .main-container footer {
+    background-color: #FCFEFD;
+    min-height: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-container footer .info {
+    width: 24%;
+  }
+  .main-container footer .info img {
+    width: 85px;
+  }
+  .main-container footer .info p {
+    width: 390px;
+    color: #555;
+    line-height: 150%;
+    margin-top: 25px;
+  }
+  .main-container footer .footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .main-container footer .footer-content ul li:first-child {
+    font-size: 1.5em;
+    color: #222;
+    margin-top: 0;
+  }
+  .main-container footer .footer-content ul li:first-child + li {
+    margin-top: 35px;
+  }
+  .main-container footer .footer-content ul li:not(li:first-child) {
+    cursor: pointer;
+  }
+  .main-container footer .footer-content ul li {
+    font-weight: 400;
+    font-size: 1em;
+    color: #555;
+    margin-top: 25px;
+    font-weight: 500;
+  }
+  .main-container footer .footer-content .contacts h3 {
+    font-size: 1.5em;
+    color: #222;
+  }
+  .main-container footer .footer-content .contacts p {
+    font-size: 1em;
+    color: #555;
+    user-select: text;
+    margin-top: 40px;
+  }
+  .main-container footer .footer-content .contacts .socialnetworks-icons {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .main-container footer .footer-content .contacts .socialnetworks-icons img {
+    width: 25px;
+    cursor: pointer;
+  }
+  .burger-menu-wrapper__active {
+    display: unset;
+  }
+  @media screen and (max-width: 1512px) {
+    .main-container header {
+      height: 100px;
+    }
+  
+    .main-container .scroll-page {
+      height: 100px;
+    }
+  
+    .main-container header img {
+      width: 55px;
+    }
+  
+    .main-container header .header-right button {
+      width: 150px;
+      height: 40px;
+      font-size: 0.8em;
+    }
+  
+    .main-container header .header-right .headerImage {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .main-container header nav {
+      width: 390px;
+    }
+  
+    .wrap header .header-right {
+      width: 320px;
+    }
+  
+    h2 {
+      font-size: 2.5em !important;
+    }
+  
+    p {
+      font-size: 0.9em !important;
+    }
+  
+    .main-container .section-homepage > p {
+      width: 626px;
+    }
+  
+    .main-container .section-homepage .ordernow-btn {
+      margin-top: 30px;
+    }
+  
+    .main-container .section-homepage .aboutBlock .aboutBlock__right article {
+      width: 250px;
+      height: 105px;
+    }
+  
+    .wrap .homePage .banner-block .banner-block-right article .statisticblock-text h3 {
+      font-size: 1.6em;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right article {
+      padding: 5% 10%;
+    }
+  
+    .main-container .section-delivery .banner-block .banner-block-left img {
+      width: 85%;
+    }
+  
+    .main-container .section-homepage {
+      padding: 70px 8% 0px 8%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      width: 551px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article {
+      width: 510px;
+      height: 150px;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right h2 {
+      width: 391px;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right > p {
+      margin-top: 40px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left h2 {
+      width: 448px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left p {
+      margin-top: 45px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block h4 {
+      font-size: 1.6em;
+    }
+  
+    .main-container .section-download-app .apppage-right {
+      width: 65%;
+    }
+  
+    .main-container .section-download-app .apppage-left {
+      width: 100%;
+    }
+  
+    .main-container .section-download-app .apppage-right p {
+      width: 551px;
+    }
+  
+    .main-container footer .footer-content ul li:first-child {
+      font-size: 1.3em;
+    }
+  
+    .main-container footer .footer-content ul li:first-child + li {
+      margin-top: 25px;
+    }
+  
+    .main-container footer .footer-content ul li {
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+  
+    .main-container footer .footer-content .contacts h3 {
+      font-size: 1.3em;
+    }
+  
+    .main-container footer .footer-content .contacts .socialnetworks-icons {
+      width: 60%;
+    }
+  
+    .main-container footer .footer-content .contacts .socialnetworks-icons img {
+      width: 20px;
+    }
+  
+    .main-container footer {
+      min-height: 370px;
+    }
+  
+    .main-container footer .footer-content {
+      width: 53%;
+    }
+  
+    .main-container footer .info p {
+      width: 313px;
+    }
+  
+    .main-container footer .info img {
+      width: 75px;
+    }
+    .burger-menu-wrapper__active {
+      display: unset;
+    }
+  @media screen and (max-width: 1200px) {
+    .main-container header nav {
+      font-size: 0.8em;
+      width: 310px;
+    }
+  
+    .main-container .section-homepage {
+      bottom: 32px;
+    }
+  
+    .main-container header .header-right button {
+      width: 135px;
+      height: 37px;
+    }
+  
+    .main-container header .header-right {
+      width: 265px;
+    }
+  
+    .main-container header .header-right .headerImage {
+      width: 37px;
+      height: 37px;
+    }
+  
+    h2 {
+      font-size: 2em !important;
+    }
+  
+    p {
+      font-size: 0.8em !important;
+    }
+  
+    .main-container .section-homepage > p {
+      width: 557px;
+    }
+  
+    .main-container .section-homepage .ordernow-btn button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right article {
+      width: 210px;
+      height: 90px;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-image .image-background {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right article .statisticblock-text h3 {
+      font-size: 1.5em;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right > :not(article:first-child) {
+      margin-top: 10px;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-left img {
+      width: 90%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      width: 388px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article {
+      width: 377px;
+      height: 120px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-image .image-background {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text h3 {
+      font-size: 1em;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      margin-top: 5px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text p {
+      width: 199px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article:last-child {
+      width: 377px;
+      height: 50px;
+    }
+  
+    .main-container .section-download-app .ourbenefitspage-right img {
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text {
+      padding-left: 20px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left {
+      width: 55%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-right {
+      width: 45%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right > p {
+      margin-top: 20px;
+      width: 420px;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn {
+      margin-top: 30px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left p {
+      width: 429px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom {
+      width: 400px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block h4 {
+      font-size: 1.3em;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block img {
+      width: 110px;
+      margin-top: 10px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons button {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .main-container .section-download-app .apppage-right h2 {
+      width: 356px;
+      margin-top: 20px;
+    }
+  
+    .main-container .section-download-app .apppage-right p {
+      width: 371px;
+    }
+  
+    .main-container .section-download-app .apppage-right p {
+      margin-top: 20px;
+    }
+  
+    .main-container .section-download-app .apppage-left img {
+      width: 70%;
+    }
+  
+    .main-container footer .footer-content {
+      width: 60%;
+    }
+  
+    .main-container footer .info p {
+      width: 260px;
+      margin-top: 10px;
+    }
+  
+    .main-container footer .info img {
+      width: 65px;
+    }
+  
+    .main-container footer .footer-content ul li:first-child {
+      font-size: 1.1em;
+    }
+  
+    .main-container footer .footer-content .contacts h3 {
+      font-size: 1.1em;
+    }
+  
+    .main-container footer .footer-content ul li:first-child + li {
+      margin-top: 20px;
+    }
+  
+    .main-container footer .footer-content ul li {
+      margin-top: 15px;
+    }
+  
+    .contacts {
+      width: 150px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .main-container header :not(.burger-menu, .logo) * {
+      display: none !important;
+    }
+  
+    .main-container header nav {
+      display: none;
+    }
+  
+    .main-container header .burger-menu {
+      display: flex !important;
+    }
+  
+    .header-right {
+      display: none !important;
+    }
+  
+    .main-container .section-homepage .banner-block {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-homepage {
+      background-position: center;
+      padding: 70px 8% 70px 8%;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-left img {
+      width: 100%;
+    }
+  
+    .main-container .section-homepage .banner-block .banner-block-right {
+      width: auto;
+    }
+  
+    .main-container header {
+      height: 80px;
+    }
+  
+    .main-container .scroll-page {
+      height: 80px;
+    }
+  
+    .main-container .scroll-page {
+      bottom: 40px;
+    }
+  
+    .main-container .section-delivery {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0 0 50px 0;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left {
+      width: auto;
+      margin-top: 50px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-right {
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      text-align: center;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article:last-child {
+      display: none;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-right img {
+      width: 80%;
+    }
+  
+    .main-container .section-explorenutrients {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-left {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right h2 {
+      text-align: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right > p {
+      text-align: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right .explorenow-btn button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right {
+      width: auto;
+      margin-top: 30px;
+    }
+  
+    .main-container .section-reviewspage {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-right {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-right img {
+      width: 50%;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left {
+      margin-top: 50px;
+      width: auto;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left h2 {
+      text-align: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left p {
+      text-align: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom{
+      width: 100%;
+    }
+  
+    .main-container .section-download-app {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-download-app .apppage-right {
+      width: auto;
+      margin-top: 50px;
+    }
+  
+    .main-container .section-download-app .apppage-right > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-download-app .apppage-right h2 {
+      text-align: center;
+    }
+  
+    .main-container .section-download-app .apppage-right p {
+      text-align: center;
+    }
+  
+    .main-container .section-download-app .apppage-right .app-buttons img {
+      margin: 0 5px;
+    }
+  
+    .contacts {
+      width: auto;
+    }
+  
+    .main-container footer .info {
+      width: auto;
+    }
+  
+    .main-container footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container footer .info {
+      text-align: center;
+      margin-top: 80px;
+    }
+  
+    .main-container footer .footer-content {
+      display: none;
+    }
+  
+    .footer-content-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dropdown-settings {
+      width: 280px;
+      height: 50px;
+      font-size: 1.0em;
+      color: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  
+    .dropdown-settings img {
+      width: 13px;
+    }
+  
+    .dropdown-content {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 0px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+  
+    .dropdown-content ul li:first-child {
+      margin-top: 25px;
+    }
+  
+    .dropdown-content ul li {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 15px;
+      text-align: center;
+    }
+  
+    .dropdown-content p {
+      font-size: 0.8em !important;
+      margin-top: 10px;
+    }
+  
+    .socialnetworks-icons {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .socialnetworks-icons img {
+      width: 20px;
+    }
+  
+    .main-container footer {
+      padding: 0 8% 75px 8%;
+    }
+  
+    .dropdown-content__active {
+      height: 127px;
+    }
+  
+    .dropdown-arrow {
+      transition: 0.3s;
+    }
+  
+    .dropdown-arrow__active {
+      transform: rotate(180deg);
+    }
+  
+    .wrapper-container {
+      height: 0;
+      width: 100%;
+      top: 80px;
+      position: fixed;
+      background-color: rgba(9, 166, 109, 0.97);
+      z-index: 9998;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+  
+    .wrapper-container-active {
+      height: calc(100vh - 80px);
+      padding: 40px 0;
+    }
+  
+    .burger-wrap {
+      height: 400px;
+      width: 100%;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .burger-wrap::-webkit-scrollbar {
+      width: 0px;
+    }
+  
+    .burger-menu-wrapper ul li {
+      color: white;
+      font-size: 1.2em;
+      margin: 30px 0;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    .menu-tools {
+      width: 180px;
+    }
+  
+    .wrap .scroll-page {
+      display: block;
+    }
+  
+    .tools-icons .burgericons {
+      width: 50px;
+      height: 50px;
+      background-color: #f1f1f1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .tools-icons {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .tools-icons .burgericons img {
+      width: 55%;
+      margin-right: 2px;
+    }
+  
+    .tools-button {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .tools-button button {
+      min-width: 120px;
+      height: 42px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      font-weight: 500;
+      border: none;
+      border-radius: 20px;
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  
+    .main-container header .burger-menu div {
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    .main-container header .burger-menu__active {
+      padding: 10px 0px 10px 1px;
+    }
+  
+    .main-container header .burger-menu .burgerTopLine__active {
+      top: 35%;
+      transform: rotate(45deg);
+    }
+  
+    .main-container header .burger-menu .burgerMiddleLine__active {
+      width: 0;
+      height: 0;
+    }
+  
+    .main-container header .burger-menu .burgerBottomLine__active {
+      bottom: 33%;
+      right: 2%;
+      transform: rotate(-45deg);
+    }
+  
+    .scrollLock {
+      overflow: hidden;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom {
+      margin-top: 15px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    h2 {
+      font-size: 1.6em !important;
+    }
+  
+    p {
+      font-size: 0.7em !important;
+    }
+  
+    .main-container .section-homepage > p {
+      margin-top: 15px;
+    }
+  
+    .main-container .section-homepage h2 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .main-container .section-homepage > p {
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 5% 5%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left {
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text h3 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text {
+      padding-left: 0;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-image {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left article .benefitscards-text h3 {
+      margin-top: 20px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      text-align: center;
+      margin-top: 15px;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left h2 {
+      text-align: center;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-left p {
+      width: auto;
+    }
+  
+    .main-container .section-delivery .ourbenefitspage-right img {
+      width: 100%;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-left img {
+      width: 100%;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right h2 {
+      width: 100%;
+    }
+  
+    .main-container .section-explorenutrients .nutrientsblock-right > p {
+      width: 100%;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-right img {
+      width: 80%;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left h2 {
+      width: 100%;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left p {
+      width: 100%;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .rate-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .main-container .section-reviewspage .reviewspage-left .reviewspage-left-bottom .slider-buttons button {
+      margin: 0 10px;
+    }
+  
+    .main-container .section-download-app .apppage-left {
+      width: 60%;
+    }
+  
+    .main-container .section-download-app .apppage-right h2 {
+      width: 100%;
+    }
+  
+    .main-container .section-download-app .apppage-right p {
+      width: 100%;
+    }
+  
+    .main-container .section-download-app .apppage-right .app-buttons img {
+      width: 100px;
+    }
+  
+    .dropdown-settings {
+      width: 240px;
+    }
+  
+    .dropdown-content {
+      width: 240px;
+    }
+  }
+}
